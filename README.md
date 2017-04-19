@@ -1,9 +1,14 @@
-# api documentation for  [image-webpack-loader (v3.3.0)](https://github.com/tcoopman/image-webpack-loader#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-image-webpack-loader.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-image-webpack-loader) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-image-webpack-loader.svg)](https://travis-ci.org/npmdoc/node-npmdoc-image-webpack-loader)
+# npmdoc-image-webpack-loader
+
+#### api documentation for  [image-webpack-loader (v3.3.0)](https://github.com/tcoopman/image-webpack-loader#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-image-webpack-loader.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-image-webpack-loader) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-image-webpack-loader.svg)](https://travis-ci.org/npmdoc/node-npmdoc-image-webpack-loader)
+
 #### Image loader module for webpack
 
-[![NPM](https://nodei.co/npm/image-webpack-loader.png?downloads=true)](https://www.npmjs.com/package/image-webpack-loader)
+[![NPM](https://nodei.co/npm/image-webpack-loader.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/image-webpack-loader)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-image-webpack-loader/build/screenCapture.buildNpmdoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-image-webpack-loader%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-image-webpack-loader/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-image-webpack-loader/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-image-webpack-loader/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-image-webpack-loader/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-image-webpack-loader/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-image-webpack-loader/build/screenCapture.npmPackageListing.svg)
 
@@ -46,13 +51,11 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "tcoopman",
-            "email": "thomas.coopman@gmail.com"
+            "name": "tcoopman"
         }
     ],
     "name": "image-webpack-loader",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+ssh://git@github.com/tcoopman/image-webpack-loader.git"
@@ -66,17 +69,6 @@
     "version": "3.3.0"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module image-webpack-loader](#apidoc.module.image-webpack-loader)
-1.  boolean <span class="apidocSignatureSpan">image-webpack-loader.</span>raw
-
-
-
-# <a name="apidoc.module.image-webpack-loader"></a>[module image-webpack-loader](#apidoc.module.image-webpack-loader)
 
 
 
