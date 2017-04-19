@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/tcoopman/image-webpack-loader#readme"
-
-    >image-webpack-loader (v3.3.0)</a>
+    <a href="https://github.com/tcoopman/image-webpack-loader#readme">image-webpack-loader (v3.3.0)</a>
 </h1>
 <h4>Image loader module for webpack</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.image-webpack-loader">module image-webpack-loader</a><ol>
 
@@ -94,11 +87,11 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">image-webpack-loader = function (content) {
-  this.cacheable &#x26;&#x26; this.cacheable();
+  this.cacheable &amp;&amp; this.cacheable();
 
   var config = this.version === 2 ?
     loaderUtils.getOptions(this)
-    : getLegacyLoaderConfig(this, &#x22;imageWebpackLoader&#x22;);
+    : getLegacyLoaderConfig(this, "imageWebpackLoader");
 
   var options = {
     bypassOnDebug: config.bypassOnDebug || false,
@@ -109,19 +102,19 @@
     svgo: config.svgo || {}
   };
   // Remove in interlaced and optimizationLevel checks in new major version
-  if (config.hasOwnProperty(&#x27;interlaced&#x27;)) {
+  if (config.hasOwnProperty('interlaced')) {
     options.gifsicle.interlaced = config.interlaced;
-    this.emitWarning(&#x22;DEPRECATED. Configure gifsicle&#x27;s interlaced option in its own options. (gifsicle.interlaced)&#x22;);
+    this.emitWarning("DEPRECATED. Configure gifsicle's interlaced option in its own options. (gifsicle.interlaced)");
   }
-  if (config.hasOwnProperty(&#x27;optimizationLevel&#x27;)) {
+  if (config.hasOwnProperty('optimizationLevel')) {
     options.optipng.optimizationLevel = config.optimizationLevel;
-    this.emitWarning(&#x22;DEPRECATED. Configure optipng&#x27;s optimizationLevel option in its own options. (optipng.optimizationLevel)&#x22;);
+    this.emitWarning("DEPRECATED. Configure optipng's optimizationLevel option in its own options. (optipng.optimizationLevel)");
   }
 
   var callback = this.async(),
     called = false;
 
-  if (this.debug === true &#x26;&#x26; options.bypassOnDebug === true) {
+  if (this.debug === true &amp;&amp; options.bypassOnDebug === true) {
     // Bypass processing while on watch mode
     return callback(null, content);
   } else {
@@ -141,10 +134,10 @@
       .buffer(content, {
         plugins
       })
-      .then(data =&#x3e; {
+      .then(data =&gt; {
         callback(null, data);
       })
-      .catch(err =&#x3e; {
+      .catch(err =&gt; {
         callback(err);
       });
   }
@@ -161,3 +154,4 @@
     ]
 </div>
 </div>
+</body></html>

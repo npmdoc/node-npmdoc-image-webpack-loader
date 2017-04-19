@@ -67,6 +67,15 @@
 
         </li>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.image-webpack-loader.image-webpack-loader">
+            function <span class="apidocSignatureSpan"></span>image-webpack-loader
+            <span class="apidocSignatureSpan">(content)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
@@ -74,6 +83,74 @@
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.image-webpack-loader" id="apidoc.module.image-webpack-loader">module image-webpack-loader</a></h1>
 
+
+
+
+    <h2>
+        <a href="#apidoc.element.image-webpack-loader.image-webpack-loader" id="apidoc.element.image-webpack-loader.image-webpack-loader">
+        function <span class="apidocSignatureSpan"></span>image-webpack-loader
+        <span class="apidocSignatureSpan">(content)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">image-webpack-loader = function (content) {
+  this.cacheable &#x26;&#x26; this.cacheable();
+
+  var config = this.version === 2 ?
+    loaderUtils.getOptions(this)
+    : getLegacyLoaderConfig(this, &#x22;imageWebpackLoader&#x22;);
+
+  var options = {
+    bypassOnDebug: config.bypassOnDebug || false,
+    gifsicle: config.gifsicle || {},
+    mozjpeg: config.mozjpeg || {},
+    pngquant: config.pngquant || {},
+    optipng: config.optipng || {},
+    svgo: config.svgo || {}
+  };
+  // Remove in interlaced and optimizationLevel checks in new major version
+  if (config.hasOwnProperty(&#x27;interlaced&#x27;)) {
+    options.gifsicle.interlaced = config.interlaced;
+    this.emitWarning(&#x22;DEPRECATED. Configure gifsicle&#x27;s interlaced option in its own options. (gifsicle.interlaced)&#x22;);
+  }
+  if (config.hasOwnProperty(&#x27;optimizationLevel&#x27;)) {
+    options.optipng.optimizationLevel = config.optimizationLevel;
+    this.emitWarning(&#x22;DEPRECATED. Configure optipng&#x27;s optimizationLevel option in its own options. (optipng.optimizationLevel)&#x22;);
+  }
+
+  var callback = this.async(),
+    called = false;
+
+  if (this.debug === true &#x26;&#x26; options.bypassOnDebug === true) {
+    // Bypass processing while on watch mode
+    return callback(null, content);
+  } else {
+    var plugins = [];
+    if(options.gifsicle.enabled !== false)
+      plugins.push(imageminGifsicle(options.gifsicle));
+    if(options.mozjpeg.enabled !== false)
+      plugins.push(imageminMozjpeg(options.mozjpeg));
+    if(options.svgo.enabled !== false)
+      plugins.push(imageminSvgo(options.svgo));
+    if(options.pngquant.enabled !== false)
+      plugins.push(imageminPngquant(options.pngquant));
+    if(options.optipng.enabled !== false)
+      plugins.push(imageminOptipng(options.optipng));
+
+    imagemin
+      .buffer(content, {
+        plugins
+      })
+      .then(data =&#x3e; {
+        callback(null, data);
+      })
+      .catch(err =&#x3e; {
+        callback(err);
+      });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
 
 
 </div>
