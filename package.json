@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "image-webpack-loader",
-    "description": "#### api documentation for  [image-webpack-loader (v3.3.0)](https://github.com/tcoopman/image-webpack-loader#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-image-webpack-loader.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-image-webpack-loader) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-image-webpack-loader.svg)](https://travis-ci.org/npmdoc/node-npmdoc-image-webpack-loader)",
+    "description": "#### basic api documentation for  [image-webpack-loader (v3.3.0)](https://github.com/tcoopman/image-webpack-loader#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-image-webpack-loader.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-image-webpack-loader) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-image-webpack-loader.svg)](https://travis-ci.org/npmdoc/node-npmdoc-image-webpack-loader)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "image-webpack-loader": "*",

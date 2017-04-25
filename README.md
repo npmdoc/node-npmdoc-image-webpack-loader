@@ -1,6 +1,6 @@
 # npmdoc-image-webpack-loader
 
-#### api documentation for  [image-webpack-loader (v3.3.0)](https://github.com/tcoopman/image-webpack-loader#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-image-webpack-loader.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-image-webpack-loader) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-image-webpack-loader.svg)](https://travis-ci.org/npmdoc/node-npmdoc-image-webpack-loader)
+#### basic api documentation for  [image-webpack-loader (v3.3.0)](https://github.com/tcoopman/image-webpack-loader#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-image-webpack-loader.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-image-webpack-loader) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-image-webpack-loader.svg)](https://travis-ci.org/npmdoc/node-npmdoc-image-webpack-loader)
 
 #### Image loader module for webpack
 
@@ -66,7 +66,8 @@
         "test:webpack1": "npm install -q webpack@1.x && npm run test:clean && webpack --config test/webpack1.config.js",
         "test:webpack2": "npm install -q webpack@2.x && npm run test:clean && webpack --config test/webpack2.config.js"
     },
-    "version": "3.3.0"
+    "version": "3.3.0",
+    "bin": {}
 }
 ```
 
