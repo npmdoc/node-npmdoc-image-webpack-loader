@@ -92,7 +92,7 @@
 <tspan x="10" y="1434">  │ │ │ │ │ ├── is-zip@1.0.0 </tspan>
 <tspan x="10" y="1450">  │ │ │ │ │ ├── stat-mode@0.2.2 </tspan>
 <tspan x="10" y="1466">  │ │ │ │ │ ├── through2@2.0.3 </tspan>
-<tspan x="10" y="1482">  │ │ │ │ │ └─┬ yauzl@2.7.0 </tspan>
+<tspan x="10" y="1482">  │ │ │ │ │ └─┬ yauzl@2.8.0 </tspan>
 <tspan x="10" y="1498">  │ │ │ │ │   ├── buffer-crc32@0.2.13 </tspan>
 <tspan x="10" y="1514">  │ │ │ │ │   └─┬ fd-slicer@1.0.1 </tspan>
 <tspan x="10" y="1530">  │ │ │ │ │     └── pend@1.2.0 </tspan>
@@ -269,7 +269,7 @@
 <tspan x="10" y="4266">  │ │ │ │     │   └── array-find-index@1.0.2 </tspan>
 <tspan x="10" y="4282">  │ │ │ │     ├── map-obj@1.0.1 </tspan>
 <tspan x="10" y="4298">  │ │ │ │     ├── minimist@1.2.0 </tspan>
-<tspan x="10" y="4314">  │ │ │ │     ├─┬ normalize-package-data@2.3.6 </tspan>
+<tspan x="10" y="4314">  │ │ │ │     ├─┬ normalize-package-data@2.3.8 </tspan>
 <tspan x="10" y="4330">  │ │ │ │     │ ├── hosted-git-info@2.4.2 </tspan>
 <tspan x="10" y="4346">  │ │ │ │     │ ├─┬ is-builtin-module@1.0.0 </tspan>
 <tspan x="10" y="4362">  │ │ │ │     │ │ └── builtin-modules@1.1.1 </tspan>
